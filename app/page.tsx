@@ -12,11 +12,14 @@ const Page = () => {
 			</p>
 			<ExploreBtn/>
 
-			<div>
-				<h3>Feature Events</h3>
-				<ul>
-					{[1, 2, 3, 4, 5].map((even) => (
-						<li key={even}>Even {even}</li>
+			<div className="mt-20 space-y-7">
+				<h3>Featured Events</h3>
+
+				<ul className="events">
+					{[1, 2, 3, 4, 5].map((event) => (
+						<li key={event} className="">
+							Even #${event}
+						</li>
 					))}
 				</ul>
 			</div>
